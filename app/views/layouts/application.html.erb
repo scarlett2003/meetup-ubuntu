@@ -13,9 +13,9 @@
 	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script src="js/jquery.anystretch.js"></script>
 此三行改以下方方式替代 -->
-<%= javascript_include_tag "application" %>
+  <%= javascript_include_tag "application" %>
 
-
+  <%= csrf_meta_tags %>
 </head>
 <body class="<%= params[:controller] + '-' + params[:action] %>">
 <div class="navbar clearfix">	
